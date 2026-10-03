@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petition for a Fair School Environment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">STUDENT VOICES</div>
+  <a href="#sign" class="header-button">Sign the Petition</a>
+</header>
+
+<main>
+<section class="hero">
+  <span class="tag">SCHOOL COMMUNITY PETITION</span>
+  <h1>We deserve respectful communication.</h1>
+  <p class="subtitle">
+    We are asking school administration to review concerns about Dr. Manresa's
+    interactions with students and parents and take appropriate action based
+    on the findings.
+  </p>
+  <a href="#sign" class="primary-button">✍️ Add My Signature</a>
+</section>
+
+<section class="notice">
+  <strong>Keep it factual.</strong>
+  <span>Only include experiences you personally witnessed or can support. Do not post private information about students, parents, or staff.</span>
+</section>
+
+<section class="stats">
+  <div>
+    <strong><span id="count">0</span> / 50</strong>
+    <span>signatures toward our goal</span>
+    <div class="progress"><div id="progress"></div></div>
+  </div>
+  <div>
+    <strong>50</strong>
+    <span>signatures is our goal</span>
+  </div>
+</section>
+
+<section class="content-grid">
+<article class="card">
+  <span class="tag">OUR REQUEST</span>
+  <h2>Request concerning Dr. Manresa</h2>
+  <p>
+    We are asking school administration to formally review reported concerns
+    about disrespectful or inappropriate interactions involving students'
+    parents and members of the school community.
+  </p>
+  <p>
+    We believe concerns should be heard fairly, relevant evidence should be
+    considered, and the school should take whatever disciplinary or staffing
+    action is appropriate under its policies if the concerns are substantiated.
+  </p>
+  <h3>Why this matters</h3>
+  <p>
+    Parents and students should be able to communicate with teachers and
+    school staff in a respectful environment. This petition gives members of
+    the school community a way to request that their concerns receive a
+    formal review.
+  </p>
+</article>
+
+<aside class="card sign-card" id="sign">
+  <span class="tag">ADD YOUR NAME</span>
+  <h2>Sign the petition</h2>
+  <form id="petitionForm">
+    <label for="name">Your name</label>
+    <input id="name" type="text" maxlength="80" placeholder="Enter your name" required>
+
+    <label for="email">Email <small>(optional)</small></label>
+    <input id="email" type="email" placeholder="you@example.com">
+
+    <label class="checkbox">
+      <input id="public" type="checkbox" checked>
+      <span>Display my name publicly</span>
+    </label>
+
+    <button type="submit" class="primary-button full">Sign Petition</button>
+    <p class="fine-print">Please sign only if you genuinely support this request.</p>
+    <p id="message" class="message" aria-live="polite"></p>
+  </form>
+</aside>
+</section>
+
+<section class="signatures card">
+  <span class="tag">RECENT SUPPORTERS</span>
+  <h2>People who signed</h2>
+  <div id="signatureList"><p class="empty">No signatures yet. Be the first!</p></div>
+</section>
+</main>
+
+<footer><p>Student voices deserve to be heard respectfully.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
